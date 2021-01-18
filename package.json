@@ -5,22 +5,26 @@
   "dependencies": {
     "@blueprintjs/core": "^2.3.1",
     "@blueprintjs/icons": "^2.2.1",
-    "aws-amplify": "^0.4.8",
+    "aws-amplify": "^1.0.0",
     "aws4": "^1.7.0",
     "history": "^4.7.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "react-transition-group": "^2.4.0"
+    "react-scripts": "3.4.2",
+    "react-transition-group": "^2.4.0",
+    "snyk": "^1.437.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "node-fetch": "^2.1.2"
-  }
+  },
+  "snyk": true
 }
